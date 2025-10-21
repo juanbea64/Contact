@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+s    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Formulario de Contacto</h1>
+            <form 
+            action="interconexion.php" 
+            method="POST" 
+            class="contact-form"
+            >
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="solicitud">Solicitud</label>
+                    <textarea id="solicitud" name="solicitud" rows="5" placeholder="Escribe tu solicitud aquí..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    <a href="index.html" class="btn-back">Volver al Inicio</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
