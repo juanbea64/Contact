@@ -112,6 +112,10 @@ body {
     min-height: 100px;
 }
 
+.form-group a {
+   align-self: center;
+}
+
 /* Botones */
 .btn-primary,
 .btn-submit,
@@ -128,6 +132,7 @@ body {
     border: none;
     cursor: pointer;
     box-shadow: 0 4px 20px rgba(124, 92, 219, 0.3);
+    align-self: center;
 }
 
 .btn-primary:hover,
